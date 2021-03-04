@@ -1,7 +1,6 @@
 require 'net/http'
 require 'uri'
 require 'json'
-require 'pry'
 
 def get_stores(zip_code)
   uri = URI.parse("https://www.riteaid.com/services/ext/v2/stores/getStores?address=#{zip_code}&attrFilter=PREF-112&fetchMechanismVersion=2&radius=50")
